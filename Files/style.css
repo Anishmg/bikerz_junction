@@ -1,0 +1,182 @@
+/* CSS styles for the header */
+header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0px;
+  position: inherit; /* add this to make the position of the button relative to the header */
+  padding: 20px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li {
+  margin-left: 20px; /* change this to margin-left */
+  top: 50px;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header a:hover {
+  color: #ff8c00;
+}
+
+/* CSS styles for the main section */
+main {
+  background-color: #fff;
+  color: #333;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+main section {
+  margin-bottom: 40px;
+}
+
+main ul {
+  list-style: none;
+}
+
+main li {
+  margin-bottom: 10px;
+}
+
+main a {
+  color: #333;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: #ff8c00;
+}
+
+/* CSS styles for the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+}
+
+footer p {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+/* CSS styles for the social media icons */
+footer img {
+  position: absolute;
+  top: 450px;
+}
+
+#youtube-logo {
+  left: 10px;
+}
+
+footer a:hover img {
+  transform: scale(1.2);
+}
+
+/* CSS styles for the navigation toggle button */
+
+.nav-toggle:hover {
+  color: #ff8c00;
+}
+
+#navbar {
+  position: absolute;
+  top: 0px;
+  left: 63px; /* change this to left */
+}
+
+#navbar button {
+  display: block;
+  margin: auto;
+}
+
+.container {
+  padding-left: 50px; /* change this to padding-left */
+}
+
+/* CSS styles for the responsive navigation */
+@media (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    display: none;
+  }
+
+  header ul.show {
+    display: flex;
+  }
+
+  header ul li {
+    margin-left: 0; /* change this to margin-left */
+    margin-bottom: 10px;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    top: 23px;
+    left: 8px;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: transparent;
+    border: groove;
+    color: black;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .search-form {
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left; /* change this to float: left */
+  }
+
+  .search-form input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px gray;
+  }
+
+.search-form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* CSS styles for the product list and search input */
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
